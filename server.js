@@ -11,3 +11,11 @@ app.listen(8080, function(){
 app.get('/pet', function(req, res){
     res.send('펫용품 쇼핑가능 페이지입니다.');
 });
+
+app.get('/beauty', function(req, res){
+    res.send('뷰티용품 쇼핑가능 페이지입니다.');
+});
+
+app.get('/', function(req, res){
+    res.sendFile(__dirname + '/index.html');
+});
